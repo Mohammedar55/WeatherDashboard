@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard - لوحة الطقس</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <h1>🌤️ Weather Dashboard</h1>
+                <p>لوحة الطقس المتقدمة</p>
+            </div>
+            <div class="search-section">
+                <input type="text" id="cityInput" placeholder="ابحث عن مدينة..." class="search-input">
+                <button id="searchBtn" class="search-btn">🔍</button>
+                <button id="locationBtn" class="location-btn" title="موقعك الحالي">📍</button>
+            </div>
+        </header>
+
+        <!-- Current Weather -->
+        <section id="currentWeather" class="current-weather">
+            <div class="weather-main">
+                <h2 id="cityName" class="city-name">اختر مدينة</h2>
+                <div class="temperature-section">
+                    <img id="weatherIcon" src="" alt="weather icon" class="weather-icon">
+                    <div class="temp-info">
+                        <span id="temperature" class="temperature">--°</span>
+                        <p id="weatherDesc" class="description">--</p>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <span class="label">الرطوبة</span>
+                        <span id="humidity" class="value">--%</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">سرعة الريح</span>
+                        <span id="windSpeed" class="value">-- كم/س</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">الضغط</span>
+                        <span id="pressure" class="value">-- mb</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">الرؤية</span>
+                        <span id="visibility" class="value">-- كم</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5-Day Forecast -->
+        <section class="forecast-section">
+            <h3>توقعات 5 أيام</h3>
+            <div id="forecastContainer" class="forecast-container">
+                <!-- Forecast cards will be added here -->
+            </div>
+        </section>
+
+        <!-- Hourly Weather -->
+        <section class="hourly-section">
+            <h3>توقعات الساعات القادمة</h3>
+            <div id="hourlyContainer" class="hourly-container">
+                <!-- Hourly cards will be added here -->
+            </div>
+        </section>
+
+        <!-- Saved Cities -->
+        <section class="saved-cities-section">
+            <h3>المدن المحفوظة</h3>
+            <div id="savedCitiesContainer" class="saved-cities-container">
+                <!-- Saved cities will be added here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
